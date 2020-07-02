@@ -50,6 +50,6 @@
       "uilayout": "terminal"
     },
     "backend": {
-      "imageid": "ubuntu"
+      "imageid": "python:3.6"
     }
 }
