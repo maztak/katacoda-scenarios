@@ -1,8 +1,8 @@
 {
-  "title": "LINE LIFFでお絵描きアプリを作ってみよう",
-  "description": "LIFFスターターアプリをherokuにデプロイし、お絵描きアプリに改造する流れが体験できます。",
+  "title": "LDGQオンラインハンズオン ～ 商品選択→決済→データ活用まで出来るサービスを実装してみよう〜",
+  "description": "LINE PAY API v3 SDK × Heroku x kintone。",
   "difficulty": "Beginner",
-  "time": "45 minutes",
+  "time": "60 minutes",
   "details": {
     "steps": [
       {
@@ -44,10 +44,7 @@
   },
   "environment": {
       "showide": true,
-      "ide": "ssh host01 '/opt/start-vscode.sh'",
-      "idePort": 23000,
-      "hideintro": false,
-      "uilayout": "terminal"
+      "uilayout": "editor-terminal"
     },
     "backend": {
       "imageid": "python:3.6"
