@@ -15,22 +15,6 @@ cd line-pay-v3-starter
 pip install -r requirements.txt
 ```{{copy}}
 
-4. KatacodaのIDEをクリックします
-![ide](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0101_ide.jpg)<br>
 
-5. `line-pay-v3-starter`を展開します
-![ide](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0102_ide.jpg)<br>
-
-6. `.gitignore`ファイルを作成します<br>
-`line-pay-v3-starter`上でマウスを右クリック、`New File`をクリックし、ファイル名に.gitignoreと入力します
-![gitignore](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0103_gitignore.jpg)<br>
-
-7. ファイルに下記を追加し、保存します
-```
-.env
-# account.yml #後で確認
-```{{copy}}
-![gitignore](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0104_gitignore.jpg)<br>
-
-これで、〇〇ができました。<br>
-それでは、次のステップから、このアプリをherokuにデプロイ（Webサーバーにアプリをアップロードして使えるようにする）していきましょう！
+これでアプリが動くために必要なものが揃いました。<br>
+それでは次のステップで、このアプリをherokuにデプロイ（Webサーバーにアプリをアップロードして使えるようにする）していきましょう！
