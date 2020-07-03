@@ -1,15 +1,17 @@
-herokuにデプロイしましょう
+いよいよ LINE Pay アプリをherokuにデプロイします。内容としてはまだ中身がほぼ空のheroku側アプリに、ローカルのファイルをアップロードして上書きする作業になります。
 
-
-1. gitでherokuにpushします
+①gitでherokuにpushします
 
 ```shell
 git push heroku master
 ```{{copy}}
 
-3. これで LINE Pay アプリがデプロイされ使えるようになりました。
+これで LINE Pay アプリがデプロイされ使えるようになりました。<br>
 
-ログの5行前に`remote: https://linepay-app-xxx.herokuapp.com/ deployed to Heroku`と表示されていると思うので、このURLにアクセスしてみましょう。<br>
+②ブラウザでアプリURLにアクセスしてみよう<br>
+
+アプリのURL`https://linepay-app-xxx.herokuapp.com/`にアクセスしてみましょう。<br>
+
 `Request`ボタンを押せば、LINEアプリと連動して実際に一般決済が試せるはずです！
 
 デプロイしたばかりだと Internal Server Error になることがあるようです。少し間を置いて再度試してみてください。
