@@ -2,7 +2,7 @@
 
 1. LINEのgithubから、[line-pay-v3-starter](https://github.com/maztak/line-pay-v3-starter) リポジトリをCloneします<br>
 ```shell
-git clone git@github.com:maztak/line-pay-v3-starter.git
+git clone https://github.com/maztak/line-pay-v3-starter.git
 ```{{copy}}
 
 2. カレント・ディレクトを`line-pay-v3-starter`に変更します<br>
