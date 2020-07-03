@@ -1,6 +1,7 @@
-ここでは、LIFF v2のスターターアプリをローカルに持って来て、きちんと動く環境にするために、3つのコマンドを実行します
+LINE Pay アプリの実装
 
-1. LINEのgithubから、[line-pay-v3-starter](https://github.com/maztak/line-pay-v3-starter) リポジトリをCloneします<br>
+1. Githubから[line-pay-v3-starter](https://github.com/maztak/line-pay-v3-starter) リポジトリをCloneします<br>
+
 ```shell
 git clone https://github.com/maztak/line-pay-v3-starter.git
 ```{{copy}}
@@ -15,7 +16,8 @@ cd line-pay-v3-starter
 pip install -r requirements.txt
 ```{{copy}}
 
-4. `account.yml`を編集します。
+4. kintone連携のための設定
+今回はkintoneの売上管理アプリを連携させるので、`account.yml`を編集していきます。
 
 Editorで`line-pay-v3-starter`ディレクトリをクリックして展開し、`account.yml`を開きます。
 
@@ -27,4 +29,32 @@ id: kintone linepay 連携アプリのID
 token: kintoneで生成したAPIトークン
 
 これでアプリが動くために必要なものが揃いました。<br>
-それでは次のステップで、このアプリをherokuにデプロイ（Webサーバーにアプリをアップロードして使えるようにする）していきましょう！
+
+5.gitの初期設定
+後ほどWebサーバー（heroku）にアップロードするために、バージョン管理ソフトgitで変更内容をコミット（記録）しておきます。<br>
+まずは初期設定を行いましょう
+
+```shell
+git config --global user.email example@example.com
+```{{copy}}
+
+<font color="red">example@example.com部分はご自身のメールアドレスに置き換えてください</font><br>
+
+```shell
+git config --global user.name your_name
+```{{copy}}
+
+<font color="red">your_name部分はご自身の名前（ニックネーム等）に置き換えてください</font><br>
+
+6. gitでコミットします
+
+```shell
+git add .
+```{{copy}}
+
+```shell
+git commit -m "first commit"
+```{{copy}}
+
+
+次のステップでは、heroku側の初期設定を行います。

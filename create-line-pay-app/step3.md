@@ -1,8 +1,8 @@
-herokuにLINE加盟店情報を設定します。
+heroku側の設定（LINE加盟店情報を設定）
 
 1. herokuの環境変数を設定します<br>
 
-LINEのSandboxにより取得したアカウントで、加盟店 M yPage にアクセスします。
+LINEのSandboxにより取得したアカウントで、加盟店 My Page にアクセスします。
 LINE Pay 加盟店 My Page
 https://pay.line.me/portal/jp/auth/login
 
@@ -23,7 +23,10 @@ heroku config:set LINE_PAY_CHANNEL_SECRET="xxx"
 <font color="red">xxxの部分は各自異なります</font><br>
 
 以下のコマンドで環境変数が正しく設定されているか確認しましょう。<br>
+
 ```shell
 heroku config
 ```{{copy}}
 
+これでheroku側の準備が終わりました。<br>
+次のステップでいよいよ作成した LINE Pay アプリをデプロイ（Webサーバーにアップロードして実際に使えるようにする）します。

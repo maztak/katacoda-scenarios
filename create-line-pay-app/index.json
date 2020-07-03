@@ -6,32 +6,20 @@
   "details": {
     "steps": [
       {
-        "title": "LINE Pay V3 Starter をCloneする",
+        "title": "LINE Pay アプリの実装",
         "text": "step1.md"
       },
       {
-        "title": "herokuにアプリをデプロイする準備",
+        "title": "heroku側の設定（アプリの作成と紐付け）",
         "text": "step2.md"
       },
       {
-        "title": "herokuにアプリをデプロイする準備(LIFF)",
+        "title": "heroku側の設定（LINE加盟店情報を設定）",
         "text": "step3.md"
       },
       {
         "title": "herokuにアプリをデプロイする",
         "text": "step4.md"
-      },
-      {
-        "title": "LINEアプリで確認してみよう",
-        "text": "step5.md"
-      },
-      {
-        "title": "スターターアプリを改造する",
-        "text": "step6.md"
-      },
-      {
-        "title": "Share Target Pickerを試してみる",
-        "text": "step7.md"
       }
     ],
     "intro": {
