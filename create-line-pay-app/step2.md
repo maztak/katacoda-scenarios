@@ -1,4 +1,4 @@
-前のステップで準備したアプリをherokuにデプロイする準備をしましょう。
+herokuにアプリを作成します。
 
 1. まずは、herokuにログインします。<br>
 Terminalに戻って、以下のコマンドを実行します。<br>
@@ -15,8 +15,6 @@ heroku login --interactive
 heroku create linepay-app-xxx
 ```{{copy}}
 
-アプリが作成されたらURLが出力されるので控えておいてください。<br>
-> 例）https://linepay-app-xxx.herokuapp.com
 
 3. 前のステップで準備したアプリ（リポジトリ）とherokuのアプリを紐づけます<br>
 ```shell
