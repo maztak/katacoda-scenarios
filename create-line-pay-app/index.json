@@ -10,15 +10,15 @@
         "text": "step1.md"
       },
       {
-        "title": "herokuにアプリを展開する準備(heroku)",
+        "title": "herokuにアプリをデプロイする準備",
         "text": "step2.md"
       },
       {
-        "title": "herokuにアプリを展開する準備(LIFF)",
+        "title": "herokuにアプリをデプロイする準備(LIFF)",
         "text": "step3.md"
       },
       {
-        "title": "herokuにアプリを展開する",
+        "title": "herokuにアプリをデプロイする",
         "text": "step4.md"
       },
       {
@@ -43,7 +43,6 @@
     }
   },
   "environment": {
-      "showide": true,
       "uilayout": "editor-terminal"
     },
     "backend": {
