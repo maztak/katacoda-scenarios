@@ -22,7 +22,7 @@ pip install -r requirements.txt
 Editorで`line-pay-v3-starter`ディレクトリをクリックして展開し、`account.yml`を開きます。
 
 前のシナリオでkintoneに追加したlinepay連携アプリの情報をもとに値を変更します。
-![kintone_api_token](https://github.com/maztak/katacoda-scenarios/blob/master/create-line-pay-app/img/kintone_api_token.png)
+![kintone_api_token](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-pay-app/img/kintone_api_token.png)
 
 domain: 自身のkintone開発者ライセンスに付与されたサブドメイン
 id: kintone linepay 連携アプリのID

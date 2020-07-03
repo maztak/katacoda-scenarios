@@ -10,7 +10,7 @@ https://pay.line.me/portal/jp/auth/login
 
 `決済連動管理` > `連動キー管理` で再度パスワードを入力すると以下画面にいきます。
 
-![line-pay-mypage](https://github.com/maztak/katacoda-scenarios/blob/master/create-line-pay-app/img/pay_line_me_jp_center_payment_interlockKey_locale_ja_JP_isAuthenticated_true_csrfToken.png)
+![line-pay-mypage](https://raw.githubusercontent.com/maztak/katacoda-scenarios/blob/master/create-line-pay-app/img/pay_line_me_jp_center_payment_interlockKey_locale_ja_JP_isAuthenticated_true_csrfToken.png)
 
 ```shell
 heroku config:set LINE_PAY_CHANNEL_ID="xxx"
