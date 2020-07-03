@@ -2,20 +2,12 @@
   "title": "Create LINE Sandbox",
   "description": "LINEが提供するテスト環境 Sandbox のアカウントを作成",
   "difficulty": "Beginner",
-  "time": "40 minutes",
+  "time": "5 minutes",
   "details": {
     "steps": [
       {
         "title": "Step 1",
         "text": "step1.md"
-      },
-      {
-        "title": "Step 2",
-        "text": "step2.md"
-      },
-      {
-        "title": "Step 3",
-        "text": "step3.md"
       }
     ],
     "intro": {
