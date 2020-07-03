@@ -1,8 +1,8 @@
 {
-  "title": "Scenario1",
-  "description": "This is Scenario1.",
-  "difficulty": "Beginner",
-  "time": "60 minutes",
+  "title": "Setup LINE App",
+  "description": "Setup LINE App",
+  "difficulty": "Intermediate",
+  "time": "20 minutes",
   "details": {
     "steps": [
       {
@@ -24,19 +24,29 @@
       {
         "title": "Step 5",
         "text": "step5.md"
+      },
+      {
+        "title": "Step 6",
+        "text": "step6.md"
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "courseData": "intro_courseData.sh",
+      "code": "intro_code.sh"
     },
     "finish": {
       "text": "finish.md"
     }
   },
   "environment": {
+    "showide": true,
+    "ide": "ssh host01 '/opt/start-vscode.sh'",
+    "idePort": 23000,
+    "hideintro": false,
     "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "python:3.6"
+    "imageid": "ubuntu"
   }
 }

@@ -1,6 +1,6 @@
 {
-  "title": "LDGQオンラインハンズオン ～ 商品選択→決済→データ活用まで出来るサービスを実装してみよう〜",
-  "description": "LINE PAY API v3 SDK × Heroku x kintone。",
+  "title": "Create Line Pay App",
+  "description": "LINE PAY API v3 SDK × Heroku で一般決済を実装",
   "difficulty": "Beginner",
   "time": "60 minutes",
   "details": {
