@@ -2,7 +2,7 @@
   "title": "Setup kintone Sales Management App",
   "description": "LINE Pay と連携する売上管理アプリを作成します",
   "difficulty": "Beginner",
-  "time": "60 minutes",
+  "time": "10 minutes",
   "details": {
     "steps": [
       {
