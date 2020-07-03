@@ -18,7 +18,7 @@ pip install -r requirements.txt
 4. KatacodaのIDEをクリックします
 ![ide](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0101_ide.jpg)<br>
 
-5. `line-pay-v3-starter`をデプロイします
+5. `line-pay-v3-starter`を展開します
 ![ide](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0102_ide.jpg)<br>
 
 6. `.gitignore`ファイルを作成します<br>
