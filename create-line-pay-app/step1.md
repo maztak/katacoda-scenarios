@@ -34,9 +34,24 @@ apps:
         token: kintoneで生成したAPIトークン
 ```
 
+kintoneアプリIDはアプリ追加ごとに連番で振られます。
+
 これでアプリが動くために必要なものが揃いました。<br>
 
-⑤gitの初期設定<br>
+⑤実際のウォレットから決済できるようにする（任意）
+
+初期のコードでは決済してもSandboxのテストウォレットから支払われて、実際のお金は決済されません。ただし実際の決済と挙動が変わるので、自分のLINEウォレットから1円払っても良い方は`app.py`の`LINE_PAY_IS_SANDBOX`を`False`にしてください。
+
+```app.py
+# LINE Pay API
+LINE_PAY_CHANNEL_ID = os.environ.get("LINE_PAY_CHANNEL_ID")
+LINE_PAY_CHANNEL_SECRET = os.environ.get("LINE_PAY_CHANNEL_SECRET")
+LINE_PAY_IS_SANDBOX = True  # ←ここをFalseにすると実際にお金が引き落とされる
+api = LinePayApi(LINE_PAY_CHANNEL_ID,
+                 LINE_PAY_CHANNEL_SECRET, is_sandbox=LINE_PAY_IS_SANDBOX)
+```
+
+⑥gitの初期設定<br>
 
 まずは初期設定を行いましょう<br>
 
