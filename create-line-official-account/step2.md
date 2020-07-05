@@ -2,6 +2,8 @@
 
 ## 2-1. リッチメニューを作成する
 
+![richmenu_demo.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/richmenu_demo.png)
+
 メニューから「リッチメニュー」を選択する
 
 ![リッチメニュー](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/AccountManagerRichMenu_01.png)
@@ -17,9 +19,13 @@
 
 ![リッチメニュー](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/AccountManagerRichMenu_03.png)
 
+### メニューテンプレートの選択
+
 `テンプレートを選択`を押してテンプレートを選択する（今回は2つのメニューを使います）
 
 ![リッチメニュー](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/select_template.png)
+
+### メニュー背景画像の作成
 
 `画像を作成`を押して、サービス選択メニューと決済メニューをつくりましょう。作成できたら`適用`を押します
 
@@ -33,7 +39,7 @@
 
 ![create_image_apply](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/create_image_apply.png)
 
-### アクション
+### アクションの設定
 
 タイプ`テキスト`を選択してテストを下記のように設定します。
 
@@ -62,7 +68,9 @@
 
 ## 2-2. カードタイプメッセージの作成
 
-サービス選択のためのカードタイプメッセージを作成します
+![service_list_demo.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/service_list_demo.png)
+
+ユーザーにサービス一覧を提示する、カードタイプメッセージを作成します
 
 ![card_type_message_create.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/card_type_message_create.png)
 
@@ -74,9 +82,17 @@
 
 下記の通りに設定します。
 
+画像は無くてもいいですが、[こちら](https://github.com/maztak/katacoda-scenarios/raw/master/create-line-official-account/irasutoya_counselor.png)のいらすとやさんの画像をお借りします。
+
 ![card_type_messaga_1.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/card_type_messaga_1.png)
 
+ちなみに`カードを追加`を押すことでサービス（商品）を増やしていくことができます。
+
+![add_card.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/add_card.png)
+
 ## 2-3. リッチメッセージの作成
+
+![payment_message_demo.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/payment_message_demo.png)
 
 ![rich_message_create.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/rich_message_create.png)
 
