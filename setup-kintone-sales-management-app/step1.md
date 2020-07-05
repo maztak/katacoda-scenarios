@@ -10,7 +10,7 @@ kintoneに LINE Pay と連携する売上管理アプリを追加します。
 
 ![kintone_app_store](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/setup-kintone-sales-management-app/img/kintone_app_store.png)
 
-`参照`ボタンを押し、先ほど解凍したフォルダの中にある`linepay_sales_management.zip`を選択し、`アプリを作成`を押します。
+`参照`ボタンを押し、先ほど解凍したフォルダの中にある`linepay_transaction.zip`を選択し、`アプリを作成`を押します。
 
 ③APIトークンの生成
 
