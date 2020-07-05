@@ -8,13 +8,13 @@ Step1 ではLINE 側の設定画面でBot を利用するためのチャネル�
 
 [LINE Developers](https://developers.line.biz/ja/) にアクセスしてログイン
 
-![LINE Developers](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/LINEDevelopers.png)
+![LINE Developers](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/LINEDevelopers.png)
 
 
 ## 1-2. プロバイダーを選択
 
 任意のプロバイダーを選択
-![プロバイダー選択](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/ProviderList.png)
+![プロバイダー選択](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/ProviderList.png)
 
 
 プロバイダー未作成の人は画面上の「作成」ボタンを押下して新規作成してください。
@@ -27,11 +27,11 @@ Step1 ではLINE 側の設定画面でBot を利用するためのチャネル�
 
 Botのチャネルを作成
 
-![チャネル作成](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/NewChannel.png)
+![チャネル作成](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/NewChannel.png)
 
 「Messaging API」 を選択
 
-![Messaging API](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/SelectMessagingAPI.png)
+![Messaging API](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/SelectMessagingAPI.png)
 
 チャネル情報を入力して、「入力内容を確認する」ボタンを押下する
 
@@ -50,11 +50,11 @@ Botのチャネルを作成
 
 各種規約に同意してチャネルを作成する
 
-![各種規約に同意](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/AgreeTerms.png)
+![各種規約に同意](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/AgreeTerms.png)
 
 情報利用に関する事項に同意する
 
-![情報利用に関する事項に同意する](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/AgreeTerms02.png)
+![情報利用に関する事項に同意する](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/AgreeTerms02.png)
 
 これで チャネルの作成が完了し、同時にLINE公式アカウントも自動作成されます。
 
@@ -64,13 +64,13 @@ Botのチャネルを作成
 
 ![line_developers_channel_basic_setting](line_developers_channel_basic_setting.png)
 
-![LINE Official Account Manager 画面](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/MessageSetting01.png)
+![LINE Official Account Manager 画面](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/MessageSetting01.png)
 
 ### 応答設定画面を開く
 
 LINE Official Account Manager の`設定`＞`応答設定`メニューを選択して応答設定画面を開く
 
-![応答設定](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/MessageSetting02.png)
+![応答設定](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/MessageSetting02.png)
 
 応答設定を下記のように設定する
 
@@ -82,14 +82,14 @@ LINE Official Account Manager の`設定`＞`応答設定`メニューを選択�
 |  応答方法 応答時間内  |  スマートチャット（AI応答メッセージ＋手動）  |
 |  応答方法 応答時間外  |  AI応答メッセージ  |
 
-![応答設定](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/line_official_account_manager_response_setting.png)
+![応答設定](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/line_official_account_manager_response_setting.png)
 
 
 ## 1-5. 作成したアカウントを友だち追加する
 
 LINE Official Account Manager の`ホーム`＞`友達追加`にあるQRコードで、自分のスマホLINEアプリに友達追加しておく。
 
-![QRCode](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/line_official_account_manager_add_friend.png)
+![QRCode](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/line_official_account_manager_add_friend.png)
 
 ※QRコードは、LINE Developers の「Messaging API 設定」タブにもあります。
 

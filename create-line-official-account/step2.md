@@ -1,37 +1,37 @@
-# 
+# 【発展編】リッチコンテンツでユーザー体験を高める
 
-## 3-1. リッチメニューを作成する
+## 2-1. リッチメニューを作成する
 
 メニューから「リッチメニュー」を選択する
 
-![リッチメニュー](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/AccountManagerRichMenu_01.png)
+![リッチメニュー](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/AccountManagerRichMenu_01.png)
 
 「リッチメニュー」を新規作成する
 
-![リッチメニュー](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/AccountManagerRichMenu_02.png)
+![リッチメニュー](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/AccountManagerRichMenu_02.png)
 
 タイトルと表示期間を入力する
 
 - 今日の日付が表示期間に含まれるよう設定する
 - 時間の欄が空だとリッチメニューを登録できないので注意
 
-![リッチメニュー](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/AccountManagerRichMenu_03.png)
+![リッチメニュー](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/AccountManagerRichMenu_03.png)
 
 `テンプレートを選択`を押してテンプレートを選択する（今回は2つのメニューを使います）
 
-![リッチメニュー](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/select_template.png)
+![リッチメニュー](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/select_template.png)
 
 `画像を作成`を押して、サービス選択メニューと決済メニューをつくりましょう。作成できたら`適用`を押します
 
 - 背景色を変えた方がメニューの境界線が明確になるのでおすすめです
 
-![create_image](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/create_image.png)
+![create_image](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/create_image.png)
 
 確認画面でファイルを（ローカルに）保存するか聞かれます。どちらでもいいですが、保存しておくと作成した画像を後から簡単に再利用できます。
 
 `適用`を押して次にいきます。
 
-![create_image_apply](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/create_image_apply.png)
+![create_image_apply](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/create_image_apply.png)
 
 ### アクション
 
@@ -49,56 +49,44 @@
 |  タイプ  |  テキスト  |
 |  テキスト  |  決済  |
 
-![リッチメニュー](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/richmenu_action.png)
+![リッチメニュー](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/richmenu_action.png)
 
 
 設定を保存する
 
-![リッチメニュー](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/richmenu_save.png)
+![リッチメニュー](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/richmenu_save.png)
 
 設定したリッチメニューが表示されていればOK！
 
-![リッチメニュー](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/richmenu_list.png)
+![リッチメニュー](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/richmenu_list.png)
 
-## 3-2. カードタイプメッセージの作成
+## 2-2. カードタイプメッセージの作成
 
 サービス選択のためのカードタイプメッセージを作成します
 
-![card_type_message_create.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/card_type_message_create.png)
+![card_type_message_create.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/card_type_message_create.png)
 
 タイトルを「サービス一覧」と設定し、カードタイプは「プロダクト」を選択しましょう
 
-![card_type_message_create_1.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/card_type_message_create_1.png)
+![card_type_message_create_1.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/card_type_message_create_1.png)
 
-![select_card_type.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/select_card_type.png)
+![select_card_type.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/select_card_type.png)
 
 下記の通りに設定します。
 
-![card_type_messaga_1.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/card_type_messaga_1.png)
+![card_type_messaga_1.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/card_type_messaga_1.png)
 
-## 3-3. リッチメッセージの作成
+## 2-3. リッチメッセージの作成
 
-![rich_message_create.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/rich_message_create.png)
+![rich_message_create.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/rich_message_create.png)
 
-![rich_message_create_1.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/rich_message_create_1.png)
+![rich_message_create_1.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/rich_message_create_1.png)
 
-## 3-4. 応答メッセージの作成
 
-応答メッセージを作成しておくと、指定したキーワードが送信されたときに自動で好きなメッセージを応答させることができます。
+これで3つのリッチコンテンツができました。
 
-これまで作成したものが自動応答するように設定していきましょう。
-
-「リッチメニュー」が押された時に、それぞれ以下になるように設定していきます。
+次のステップで「リッチメニュー」が押された時に、それぞれ以下になるように設定していきます。
 
 - サービス選択 → 「カードタイプメッセージ（サービス一覧）」を送信
 - 決済 → 「リッチメッセージ（決済）」を送信
 
-### まずは Default の応答メッセージを`オフ`にしておき、`作成`をおす
-
-![response_message_create.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/response_message_create.png)
-
-### 応答メッセージ「サービス一覧」を作成
-
-![response_message_service_list.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/response_message_service_list.png)
-
-### 応答メッセージ「
