@@ -67,11 +67,11 @@ Step1 ではLINE 側の設定画面でBot を利用するためのチャネル�
 
 ### 応答設定画面を開く
 
-LINE Official Account Manager の`設定`＞`応答設定`メニューを選択して応答設定画面を開く
+LINE Official Account Manager の`設定`＞`応答設定`へ行く
 
 ![応答設定](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/go_to_response_setting.png)
 
-応答設定を下記のように設定する
+下記のように設定する
 
 ![応答設定](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/line_official_account_manager_response_setting.png)
 
