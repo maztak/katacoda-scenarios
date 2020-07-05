@@ -1,6 +1,6 @@
 {
   "title": "Create Line Official Account",
-  "description": "LINE公式アカウントの作成とリッチメッセージの実装",
+  "description": "LINE公式アカウントの作成とリッチコンテンツの実装",
   "difficulty": "Beginner",
   "time": "40 minutes",
   "details": {
@@ -16,6 +16,10 @@
       {
         "title": "Step 3",
         "text": "step3.md"
+      },
+      {
+        "title": "Step 4",
+        "text": "step4.md"
       }
     ],
     "intro": {

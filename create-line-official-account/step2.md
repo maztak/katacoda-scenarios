@@ -1,51 +1,104 @@
-# Bot の設定＆オウム返しBot を実行する
+# 
 
-Step2 ではプログラム側にBot チャネルの設定を行い、オウム返しBot がLINE アプリで使えるようにします。
+## 3-1. リッチメニューを作成する
 
+メニューから「リッチメニュー」を選択する
 
-## 2-1. Katacoda でエディター（VSCode）を表示させる
+![リッチメニュー](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/AccountManagerRichMenu_01.png)
 
-Katacoda 画面のIDE タブを選択してエディター（VSCode）を表示する
+「リッチメニュー」を新規作成する
 
-![エディター（VSCode）を表示させる](https://raw.githubusercontent.com/sumihiro3/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/KatacodaIDETab.png)
+![リッチメニュー](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/AccountManagerRichMenu_02.png)
 
-エディターの全画面表示や、別タブでの表示も可能
-![エディター（VSCode）を表示させる](https://raw.githubusercontent.com/sumihiro3/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/KatacodaIDETabOpened.png)
+タイトルと表示期間を入力する
 
+- 今日の日付が表示期間に含まれるよう設定する
+- 時間の欄が空だとリッチメニューを登録できないので注意
 
-## 2-2. envファイルを更新する
+![リッチメニュー](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/AccountManagerRichMenu_03.png)
 
-exampleフォルダにある `.env` ファイルをクリックして開く
+`テンプレートを選択`を押してテンプレートを選択する（今回は2つのメニューを使います）
 
-![envファイル](https://raw.githubusercontent.com/sumihiro3/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/OpenDotEnv.png)
+![リッチメニュー](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/select_template.png)
 
-`.env` ファイルの内容を更新して保存する
+`画像を作成`を押して、サービス選択メニューと決済メニューをつくりましょう。作成できたら`適用`を押します
 
-![envファイル](https://raw.githubusercontent.com/sumihiro3/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/ModifyDotEnv.png)
+- 背景色を変えた方がメニューの境界線が明確になるのでおすすめです
 
-|  項目名  |  値  |
+![create_image](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/create_image.png)
+
+確認画面でファイルを（ローカルに）保存するか聞かれます。どちらでもいいですが、保存しておくと作成した画像を後から簡単に再利用できます。
+
+`適用`を押して次にいきます。
+
+![create_image_apply](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/create_image_apply.png)
+
+### アクション
+
+タイプ`テキスト`を選択してテストを下記のように設定します。
+
+- ここで設定したテキストがメニュー押下時にメッセージとして自動送信される
+
+|  A  |  値  |
 | :-- | :-- |
-|  CHANNEL_ACCESS_TOKEN  |  （1-7. でメモしたチャネルアクセストークン）  |
-|  CHANNEL_SECRET  |  （1-4. でメモしたチャネルシークレット）  |
-|  BASE_URL  |  `https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com`{{copy}}  |
+|  タイプ  |  テキスト  |
+|  テキスト  |  サービス選択  |
+
+|  B  |  値  |
+| :-- | :-- |
+|  タイプ  |  テキスト  |
+|  テキスト  |  決済  |
+
+![リッチメニュー](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/richmenu_action.png)
 
 
-## 2-3. プログラム実行
-設定変更が完了完了したら、下記コマンドをTerminal で実行する
+設定を保存する
 
-`node index.js`{{execute}}
+![リッチメニュー](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/richmenu_save.png)
 
+設定したリッチメニューが表示されていればOK！
 
-## 2-4. オウム返しBot を使ってみる
-LINE アプリで先ほど友だち登録したBot アカウントのトーク画面を開いて、オウム返しBot を使ってみましょう。
-テキストや画像、スタンプなどのメッセージを送信し、そのまま返信されるか試してみましょう。
+![リッチメニュー](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/richmenu_list.png)
 
-*注意：スタンプはLINE 公式スタンプのみ返ってきます*
+## 3-2. カードタイプメッセージの作成
 
-![オウム返しBot](https://raw.githubusercontent.com/sumihiro3/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/ParrotSpeakBot.png)
+サービス選択のためのカードタイプメッセージを作成します
 
-試し終わったら、Terminal で`Ctrl + C` を押下してプログラムを中断してください。
+![card_type_message_create.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/card_type_message_create.png)
 
+タイトルを「サービス一覧」と設定し、カードタイプは「プロダクト」を選択しましょう
 
-### お疲れ様でした
-### 次のStep ではクイズBot の設定を行って動かします
+![card_type_message_create_1.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/card_type_message_create_1.png)
+
+![select_card_type.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/select_card_type.png)
+
+下記の通りに設定します。
+
+![card_type_messaga_1.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/card_type_messaga_1.png)
+
+## 3-3. リッチメッセージの作成
+
+![rich_message_create.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/rich_message_create.png)
+
+![rich_message_create_1.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/rich_message_create_1.png)
+
+## 3-4. 応答メッセージの作成
+
+応答メッセージを作成しておくと、指定したキーワードが送信されたときに自動で好きなメッセージを応答させることができます。
+
+これまで作成したものが自動応答するように設定していきましょう。
+
+「リッチメニュー」が押された時に、それぞれ以下になるように設定していきます。
+
+- サービス選択 → 「カードタイプメッセージ（サービス一覧）」を送信
+- 決済 → 「リッチメッセージ（決済）」を送信
+
+### まずは Default の応答メッセージを`オフ`にしておき、`作成`をおす
+
+![response_message_create.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/response_message_create.png)
+
+### 応答メッセージ「サービス一覧」を作成
+
+![response_message_service_list.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/LineBotBasicCourse/LineBotBasicScenario/images/response_message_service_list.png)
+
+### 応答メッセージ「
