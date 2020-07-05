@@ -23,15 +23,23 @@
 
 `テンプレートを選択`を押してテンプレートを選択する（今回は2つのメニューを使います）
 
+![go_to_select_richmenu_template.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/go_to_select_richmenu_template.png)
+
 ![リッチメニュー](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/select_template.png)
 
 ### メニュー背景画像の作成
 
-`画像を作成`を押して、サービス選択メニューと決済メニューをつくりましょう。作成できたら`適用`を押します
+`画像を作成`を押して、「サービス選択」メニューと「決済」メニューをつくりましょう。
+
+![go_to_create_richmenu_image.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/go_to_create_richmenu_image.png)
 
 - 背景色を変えた方がメニューの境界線が明確になるのでおすすめです
 
+作成できたら`適用`を押します
+
 ![create_image](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/create_image.png)
+
+
 
 確認画面でファイルを（ローカルに）保存するか聞かれます。どちらでもいいですが、保存しておくと作成した画像を後から簡単に再利用できます。
 
