@@ -33,23 +33,25 @@
 
 ![go_to_create_richmenu_image.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/go_to_create_richmenu_image.png)
 
+![create_image](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/create_image.png)
+
+
 - 背景色を変えた方がメニューの境界線が明確になるのでおすすめです
 
 作成できたら`適用`を押します
 
-![create_image](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/create_image.png)
-
-
-
 確認画面でファイルを（ローカルに）保存するか聞かれます。どちらでもいいですが、保存しておくと作成した画像を後から簡単に再利用できます。
-
-`適用`を押して次にいきます。
 
 ![create_image_apply](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/create_image_apply.png)
 
+`適用`を押して次にいきます。
+
+
 ### アクションの設定
 
-タイプ`テキスト`を選択してテストを下記のように設定します。
+下記のように設定します。
+
+![リッチメニュー](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/richmenu_action.png)
 
 - ここで設定したテキストがメニュー押下時にメッセージとして自動送信される
 
@@ -62,8 +64,6 @@
 | :-- | :-- |
 |  タイプ  |  テキスト  |
 |  テキスト  |  決済  |
-
-![リッチメニュー](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/richmenu_action.png)
 
 
 設定を保存する
@@ -102,7 +102,11 @@
 
 ![payment_message_demo.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/payment_message_demo.png)
 
+リッチメッセージの`作成`を押します
+
 ![rich_message_create.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/rich_message_create.png)
+
+下記のように作成します
 
 ![rich_message_create_1.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/rich_message_create_1.png)
 

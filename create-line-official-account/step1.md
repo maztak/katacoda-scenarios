@@ -58,6 +58,8 @@ Step1 ではLINE 側の設定画面でBot を利用するためのチャネル�
 
 ## 1-4. 応答設定
 
+### LINE Official Manager に行く
+
 チャネル基本設定にあるリンクから、LINE Official Account Manager にいきます
 
 ![line_developers_channel_basic_setting](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/line_developers_channel_basic_setting.png)
@@ -71,6 +73,8 @@ LINE Official Account Manager の`設定`＞`応答設定`メニューを選択�
 
 応答設定を下記のように設定する
 
+![応答設定](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/line_official_account_manager_response_setting.png)
+
 |  項目名  |  値  |
 | :-- | :-- |
 |  応答モード  |  チャット  |
@@ -78,8 +82,6 @@ LINE Official Account Manager の`設定`＞`応答設定`メニューを選択�
 |  応答時間  |  オン  |
 |  応答方法 応答時間内  |  スマートチャット（AI応答メッセージ＋手動）  |
 |  応答方法 応答時間外  |  AI応答メッセージ  |
-
-![応答設定](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/line_official_account_manager_response_setting.png)
 
 
 ## 1-5. 作成したアカウントを友だち追加する
