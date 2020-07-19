@@ -10,7 +10,7 @@ git push heroku master
 
 ②ブラウザでアプリURLにアクセスしてみよう<br>
 
-アプリのURL`https://linepay-app-xxx.herokuapp.com/`にアクセスしてみましょう。<br>
+アプリのURL`https://line-pay-kintone-botxxx.herokuapp.com/`にアクセスしてみましょう。<br>
 
 `Request`ボタンを押せば、LINEアプリと連動して実際に一般決済が試せるはずです！
 

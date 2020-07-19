@@ -21,12 +21,32 @@ heroku config:set LINE_PAY_CHANNEL_SECRET="xxx"
 
 <font color="red">xxxの部分は各自異なります</font><br>
 
-以下のコマンドで環境変数が正しく設定されているか確認しましょう。<br>
+続いて LINE Bot に使用する環境変数を設定します。
+
+LINE Developers で作成したチャネルの「チャネルシークレット」と「チャネルアクセストークン」を環境変数として設定します。
+
+`LINE Developers` > `チャネル基本設定`
+
+![channel_secret.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-pay-app/img/channel_secret.png)
+
+```shell
+heroku config:set LINE_CHANNEL_SECRET="xxx"
+```{{copy}}
+
+`LINE Developers` > `Messaging API設定`
+
+![channel_access_token.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-pay-app/img/channel_access_token.png)
+
+```shell
+heroku config:set LINE_CHANNEL_SECRET="xxx"
+```{{copy}}
+
+以下のコマンドで環境変数が正しく設定されているか確認しましょう。
 
 ```shell
 heroku config
 ```{{copy}}
 
-これでheroku側の準備が終わりました。<br>
-<br>
+これでheroku側の準備が終わりました。
+
 次のステップでいよいよ作成した LINE Pay アプリをデプロイ（Webサーバーにアップロードして実際に使えるようにする）します。

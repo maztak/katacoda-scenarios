@@ -1,7 +1,8 @@
 heroku側で空のアプリを作成し、先ほど実装したアプリと紐付けます。
 
-①まずは、herokuにログインします。<br>
-Terminalに戻って、以下のコマンドを実行します。<br>
+①まずは、herokuにログインします。
+
+Terminalに戻って、以下のコマンドを実行します。
 
 ```shell
 heroku login --interactive
@@ -9,17 +10,20 @@ heroku login --interactive
 
 事前に作成しておいたherokuアカウント情報を入力してください。
 
-②herokuでアプリを作成します。<br>
-`xxx`の部分はご自身のニックネームなど任意の文字列を指定してください。<br>
-英小文字、数字、-(ハイフン)のみ使用可能です。<br>
+②herokuでアプリを作成します。
+
+`xxx`の部分はご自身のニックネームなど任意の文字列を指定してください。
+
+英小文字、数字、-(ハイフン)のみ使用可能です。
 
 ```shell
-heroku create linepay-app-xxx
+heroku create line-pay-kintone-botxxx
 ```{{copy}}
 
-③前のステップで準備したアプリ（リポジトリ）とherokuのアプリを紐づけます<br>
+③前のステップで準備したアプリ（リポジトリ）とherokuのアプリを紐づけます
+
 ```shell
-heroku git:remote -a linepay-app-xxx
+heroku git:remote -a line-pay-kintone-botxxx
 ```{{copy}}
 
 次のステップでは、herokuに LINE Pay 加盟店アカウント情報を設定します！

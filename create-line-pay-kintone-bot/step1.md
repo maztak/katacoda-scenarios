@@ -27,7 +27,7 @@ Editorで`line-pay-v3-python-kintone-bot`ディレクトリをクリックして
 
 
 ```account.yml
-domain: kintone開発者環境のサブドメイン
+domain: kintone開発者環境のサブドメインだけを記載
 apps:
     linepay: ←アプリ名
         id: kintoneアプリのID
@@ -44,15 +44,12 @@ apps:
 
 ⑤実際のウォレットから決済できるようにする（任意）
 
-初期のコードでは決済してもSandboxのテストウォレットから支払われて、実際のお金は決済されません。ただし実際の決済と挙動が変わるので、自分のLINEウォレットから1円払っても良い方は`app.py`の`LINE_PAY_IS_SANDBOX`を`False`にしてください。
+初期のコードでは決済してもSandboxのテストウォレットから支払われるので実際のお金は決済されません。ただし実際の決済と挙動が変わるので、自分のLINEウォレットから払っても良い方は`app.py`の`LINE_PAY_IS_SANDBOX`を`False`にしてください（あとで返金できます）。
 
 ```app.py
+# app.py
 # LINE Pay API
-LINE_PAY_CHANNEL_ID = os.environ.get("LINE_PAY_CHANNEL_ID")
-LINE_PAY_CHANNEL_SECRET = os.environ.get("LINE_PAY_CHANNEL_SECRET")
 LINE_PAY_IS_SANDBOX = True  # ←ここをFalseにすると実際にお金が引き落とされる
-api = LinePayApi(LINE_PAY_CHANNEL_ID,
-                 LINE_PAY_CHANNEL_SECRET, is_sandbox=LINE_PAY_IS_SANDBOX)
 ```
 
 ⑥gitの初期設定<br>
