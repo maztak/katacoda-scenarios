@@ -1,0 +1,39 @@
+{
+  "title": "Create Line Pay Kintone Bot",
+  "description": "LINE PAY API v3 SDK × Heroku × kintone で LINE Pay Bot を作成",
+  "difficulty": "Beginner",
+  "time": "60 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "LINE Pay アプリの実装",
+        "text": "step1.md"
+      },
+      {
+        "title": "heroku側の設定（アプリの作成と紐付け）",
+        "text": "step2.md"
+      },
+      {
+        "title": "heroku側の設定（LINE加盟店情報を設定）",
+        "text": "step3.md"
+      },
+      {
+        "title": "herokuにアプリをデプロイする",
+        "text": "step4.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "code": "intro_code.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+      "uilayout": "editor-terminal"
+    },
+    "backend": {
+      "imageid": "python:3.6"
+    }
+}
