@@ -38,7 +38,7 @@ Step1 ではLINE 側の設定画面でBot を利用するためのチャネル�
 |  項目名  |  値  |
 | :-- | :-- |
 |  アプリ名  |  LDGQ相談サービス  |
-|  アプリ説明  |  LDGQ相談ービス  |
+|  アプリ説明  |  LDGQ相談サービス  |
 |  大業種  |  個人  |
 |  小業種  |  個人（その他）  |
 |  メールアドレス  |  （ご自分のメールアドレス）  |
@@ -93,5 +93,3 @@ LINE Official Account Manager の`ホーム`＞`友達追加`にあるQRコー�
 ※QRコードは、LINE Developers の「Messaging API 設定」タブにもあります。
 
 これで、LINE公式アカウントが作成できたので、LINE上で`https://linepay-app-xxx.herokuapp.com/request/nocapture`というリンクをユーザーに送ってやれば、そのまま LINE Pay による支払いをしてもらうことが可能となります。
-
-しかしURLのベタ貼りではユーザーも不安になるので、次のステップ以降では各リッチコンテンツを使ってユーザー体験を高めていきます。

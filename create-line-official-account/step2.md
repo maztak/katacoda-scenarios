@@ -1,4 +1,4 @@
-# 【発展編】リッチコンテンツでユーザー体験を高める
+# リッチコンテンツでユーザー体験を高める
 
 ## 2-1. リッチメニューを作成する
 
@@ -21,7 +21,7 @@
 
 ### メニューテンプレートの選択
 
-`テンプレートを選択`を押してテンプレートを選択する（今回は2つのメニューを使います）
+`テンプレートを選択`を押してテンプレートを選択する（今回は1つのメニューを使います）
 
 ![go_to_select_richmenu_template.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/go_to_select_richmenu_template.png)
 
@@ -29,14 +29,11 @@
 
 ### メニュー背景画像の作成
 
-`画像を作成`を押して、「サービス選択」メニューと「決済」メニューをつくりましょう。
+`画像を作成`を押して、「サービス選択」メニューをつくります
 
-![go_to_create_richmenu_image.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/go_to_create_richmenu_image.png)
+![go_to_create_richmenu_image.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/go_to_create_image.png)
 
 ![create_image](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/create_image.png)
-
-
-- 背景色を変えた方がメニューの境界線が明確になるのでおすすめです
 
 作成できたら`適用`を押します
 
@@ -58,21 +55,9 @@
 |  A  |  値  |
 | :-- | :-- |
 |  タイプ  |  テキスト  |
-|  テキスト  |  サービス選択  |
+|  テキスト  |  サービス一覧  |
 
-|  B  |  値  |
-| :-- | :-- |
-|  タイプ  |  テキスト  |
-|  テキスト  |  決済  |
-
-
-設定を保存する
-
-![リッチメニュー](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/richmenu_save.png)
-
-設定したリッチメニューが表示されていればOK！
-
-![リッチメニュー](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/richmenu_list.png)
+`保存`を押して、作成を完了します。
 
 ## 2-2. カードタイプメッセージの作成
 
@@ -90,7 +75,7 @@
 
 下記の通りに設定します。
 
-画像は無くてもいいですが、[こちら](https://github.com/maztak/katacoda-scenarios/raw/master/create-line-official-account/irasutoya_counselor.png)のいらすとやさんの画像をお借りします。
+画像は`デフォルト写真`を使ってもいいですが、今回は[こちら](https://github.com/maztak/katacoda-scenarios/raw/master/create-line-official-account/irasutoya_counselor.png)のいらすとやさんの画像をお借りしてます。
 
 ![card_type_messaga_1.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/card_type_messaga_1.png)
 
@@ -98,23 +83,6 @@
 
 ![add_card.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/add_card.png)
 
-## 2-3. リッチメッセージの作成
+これでリッチコンテンツができました。
 
-![payment_message_demo.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/payment_message_demo.png)
-
-リッチメッセージの`作成`を押します
-
-![rich_message_create.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/rich_message_create.png)
-
-下記のように作成します
-
-![rich_message_create_1.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/rich_message_create_1.png)
-
-
-これで3つのリッチコンテンツができました。
-
-次のステップで「リッチメニュー」が押された時に、それぞれ以下になるように設定していきます。
-
-- サービス選択 → 「カードタイプメッセージ（サービス一覧）」を送信
-- 決済 → 「リッチメッセージ（決済）」を送信
-
+次のステップでリッチメニューの`サービス一覧`が押された時に、作成したカードタイプメッセージが自動応答で返されるように設定していきます
