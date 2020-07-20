@@ -43,7 +43,7 @@ heroku config:set LINE_CHANNEL_SECRET="xxx"
 ![channel_access_token.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-pay-kintone-bot/img/channel_access_token.png)
 
 ```shell
-heroku config:set LINE_CHANNEL_SECRET="xxx"
+heroku config:set LINE_CHANNEL_ACCESS_TOKEN="xxx"
 ```{{copy}}
 
 以下のコマンドで環境変数が正しく設定されているか確認しましょう。

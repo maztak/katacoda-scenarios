@@ -7,7 +7,7 @@ app.pyの378行目付近にある`payurl`をご自身のHerokuアプリのURLに
 ```
 payurl = 'https://ご自身Herokuアプリ名.herokuapp.com/request/nocapture?amount=' + amount
 ↓
-payurl = 'https://linepay-kintone-bot-maztak.herokuapp.com/request/nocapture?amount=' + amount
+payurl = 'https://line-pay-kintone-bot-xxx.herokuapp.com/request/nocapture?amount=' + amount
 ```
 
 アプリ名（HerokuアプリのURL）はアプリを開く以下のコマンドでも確認できます
