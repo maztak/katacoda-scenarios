@@ -1,29 +1,55 @@
-heroku側で空のアプリを作成し、先ほど実装したアプリと紐付けます。
+まず LINE Pay アプリを実装しましょう。
 
-①まずは、herokuにログインします。
-
-Terminalに戻って、以下のコマンドを実行します。
+①Githubから[line-pay-v3-python-kintone-bot](https://github.com/maztak/line-pay-v3-python-kintone-bot) リポジトリをCloneします<br>
 
 ```shell
-heroku login --interactive
-``` {{copy}}
-
-事前に作成しておいたherokuアカウント情報を入力してください。
-
-②herokuでアプリを作成します。
-
-`xxx`の部分はご自身のニックネームなど任意の文字列を指定してください。
-
-英小文字、数字、-(ハイフン)のみ使用可能です。
-
-```shell
-heroku create line-pay-kintone-botxxx
+git clone https://github.com/maztak/line-pay-v3-python-kintone-bot.git
 ```{{copy}}
 
-③前のステップで準備したアプリ（リポジトリ）とherokuのアプリを紐づけます
+②カレントディレクトリを`line-pay-v3-python-kintone-bot`に変更します<br>
 
 ```shell
-heroku git:remote -a line-pay-kintone-botxxx
+cd line-pay-v3-python-kintone-bot
 ```{{copy}}
 
-次のステップでは、herokuに LINE Pay 加盟店アカウント情報を設定します！
+③`pip`コマンドで`requirements.txt`に記載のライブラリをインストールします<br>
+```shell
+pip install -r requirements.txt
+```{{copy}}
+
+④kintone連携のための設定
+今回はkintoneの売上管理アプリを連携させるので、`account.yml`を編集していきます。
+
+Editorで`line-pay-v3-python-kintone-bot`ディレクトリをクリックして展開し、`account.yml`を開きます。
+
+前のシナリオでkintoneに追加したlinepay連携アプリの情報をもとに値を変更します。
+![kintone_api_token](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-pay-app/img/kintone_api_token.png)
+
+
+```account.yml
+domain: kintone開発者環境のサブドメインだけを記載
+apps:
+    linepay: ←アプリ名
+        id: kintoneアプリのID
+        token: kintoneで生成したAPIトークン
+```
+
+アプリ名は今回`linepay`とあらかじめ入力しておきました。
+
+<font color="red">過去に同名のアプリがあると（それが削除されてても）kintoneとの連動が上手く行きません。</font>
+
+ちなみに、kintoneアプリIDはアプリ追加ごとに連番で振られます。
+
+これで決済が動くために必要なものが揃いました。
+
+⑤実際のウォレットから決済できるようにする（任意）
+
+初期のコードでは決済してもSandboxのテストウォレットから支払われるので実際のお金は決済されません。ただし実際の決済と挙動が変わるので、自分のLINEウォレットから払っても良い方は`app.py`の`LINE_PAY_IS_SANDBOX`を`False`にしてください（あとで返金できます）。
+
+```app.py
+# app.py
+# LINE Pay API
+LINE_PAY_IS_SANDBOX = True  # ←ここをFalseにすると実際にお金が引き落とされる
+```
+
+次のステップでは、heroku側の初期設定を行います。

@@ -6,20 +6,28 @@
   "details": {
     "steps": [
       {
-        "title": "LINE Pay アプリの実装",
+        "title": "LINE Bot チャネルの作成",
         "text": "step1.md"
       },
       {
-        "title": "heroku側の設定（アプリの作成と紐付け）",
+        "title": "LINE Pay アプリの実装",
         "text": "step2.md"
       },
       {
-        "title": "heroku側の設定（LINE加盟店情報を設定）",
+        "title": "Heroku側のアプリの作成",
         "text": "step3.md"
       },
       {
-        "title": "herokuにアプリをデプロイする",
+        "title": "Herokuの環境変数の設定",
         "text": "step4.md"
+      },
+      {
+        "title": "Herokuにアプリをデプロイする",
+        "text": "step5.md"
+      },
+      {
+        "title": "LINE Bot の　Webhook設定",
+        "text": "step6.md"
       }
     ],
     "intro": {

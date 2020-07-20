@@ -1,17 +1,55 @@
-いよいよ LINE Pay アプリをherokuにデプロイします。内容としてはまだ中身がほぼ空のheroku側アプリに、ローカルのファイルをアップロードして上書きする作業になります。
+Herokuアプリの環境変数として LINE Pay 加盟店アカウントの情報と、LINE Bot 側の情報を、環境変数として設定していきます。
 
-①gitでherokuにpushします
+①Herokuの環境変数の設定（LINE Pay）
+
+LINEのSandboxにより取得したアカウントで、加盟店 My Page にアクセスします。
+
+[LINE Pay 加盟店 My Page](https://pay.line.me/portal/jp/auth/login)
+
+<font color="red">加盟店IDの`@line.pay`は自動で入力されるので注意</font>
+
+`決済連動管理` > `連動キー管理` で再度パスワードを入力すると以下画面にいきます。
+
+![line-pay-mypage](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-pay-app/img/pay_line_me_jp_center_payment_interlockKey_locale_ja_JP_isAuthenticated_true_csrfToken.png)
 
 ```shell
-git push heroku master
+heroku config:set LINE_PAY_CHANNEL_ID="xxx"
 ```{{copy}}
 
-これで LINE Pay アプリがデプロイされ使えるようになりました。<br>
+```shell
+heroku config:set LINE_PAY_CHANNEL_SECRET="xxx"
+```{{copy}}
 
-②ブラウザでアプリURLにアクセスしてみよう<br>
+<font color="red">xxxの部分は各自異なります</font><br>
 
-アプリのURL`https://line-pay-kintone-botxxx.herokuapp.com/`にアクセスしてみましょう。<br>
+②herokuの環境変数の設定（LINE Bot）
 
-`Request`ボタンを押せば、LINEアプリと連動して実際に一般決済が試せるはずです！
+続いて LINE Bot に使用する環境変数を設定します。
 
-デプロイしたばかりだと Internal Server Error になることがあるようです。少し間を置いて再度試してみてください。
+LINE Developers で「チャネルシークレット」を確認し設定します。
+
+`LINE Developers` > `チャネル基本設定`
+
+![channel_secret.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-pay-app/img/channel_secret.png)
+
+```shell
+heroku config:set LINE_CHANNEL_SECRET="xxx"
+```{{copy}}
+
+つづいて、「チャネルアクセストークン」を`発行`し、設定します。
+
+`LINE Developers` > `Messaging API設定`
+
+![channel_access_token.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-pay-app/img/channel_access_token.png)
+
+```shell
+heroku config:set LINE_CHANNEL_SECRET="xxx"
+```{{copy}}
+
+以下のコマンドで環境変数が正しく設定されているか確認しましょう。
+
+```shell
+heroku config
+```{{copy}}
+
+これでheroku側の準備が終わりました。

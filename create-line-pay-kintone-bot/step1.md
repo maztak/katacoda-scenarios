@@ -1,82 +1,93 @@
-まず LINE Pay アプリを実装しましょう。
 
-①Githubから[line-pay-v3-python-kintone-bot](https://github.com/maztak/line-pay-v3-python-kintone-bot) リポジトリをCloneします<br>
+# チャネルの作成
 
-```shell
-git clone https://github.com/maztak/line-pay-v3-python-kintone-bot.git
-```{{copy}}
-
-②カレントディレクトリを`line-pay-v3-python-kintone-bot`に変更します<br>
-
-```shell
-cd line-pay-v3-python-kintone-bot
-```{{copy}}
-
-③`pip`コマンドで`requirements.txt`に記載のライブラリをインストールします<br>
-```shell
-pip install -r requirements.txt
-```{{copy}}
-
-④kintone連携のための設定
-今回はkintoneの売上管理アプリを連携させるので、`account.yml`を編集していきます。
-
-Editorで`line-pay-v3-python-kintone-bot`ディレクトリをクリックして展開し、`account.yml`を開きます。
-
-前のシナリオでkintoneに追加したlinepay連携アプリの情報をもとに値を変更します。
-![kintone_api_token](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-pay-app/img/kintone_api_token.png)
+Step1 ではLINE 側の設定画面でBot を利用するためのチャネルの作成や設定を行います。
 
 
-```account.yml
-domain: kintone開発者環境のサブドメインだけを記載
-apps:
-    linepay: ←アプリ名
-        id: kintoneアプリのID
-        token: kintoneで生成したAPIトークン
-```
+## 1-1. LINE Developers 
 
-アプリ名は今回`linepay`とあらかじめ入力しておきました。
-
-<font color="red">過去に同名のアプリがあると（それが削除されてても）kintoneとの連動が上手く行きません。</font>
-
-ちなみに、kintoneアプリIDはアプリ追加ごとに連番で振られます。
-
-これでアプリが動くために必要なものが揃いました。
-
-⑤実際のウォレットから決済できるようにする（任意）
-
-初期のコードでは決済してもSandboxのテストウォレットから支払われるので実際のお金は決済されません。ただし実際の決済と挙動が変わるので、自分のLINEウォレットから払っても良い方は`app.py`の`LINE_PAY_IS_SANDBOX`を`False`にしてください（あとで返金できます）。
-
-```app.py
-# app.py
-# LINE Pay API
-LINE_PAY_IS_SANDBOX = True  # ←ここをFalseにすると実際にお金が引き落とされる
-```
-
-⑥gitの初期設定<br>
-
-まずは初期設定を行いましょう<br>
-
-```shell
-git config --global user.email example@example.com
-```{{copy}}
-
-<font color="red">example@example.com部分はご自身のメールアドレスに置き換えてください</font><br>
-
-```shell
-git config --global user.name your_name
-```{{copy}}
-
-<font color="red">your_name部分はご自身の名前（ニックネーム等）に置き換えてください</font><br>
-
-⑤コミットします<br>
-
-```shell
-git add .
-```{{copy}}
-
-```shell
-git commit -m "first commit"
-```{{copy}}
+[LINE Developers](https://developers.line.biz/console/) にログインします
 
 
-次のステップでは、heroku側の初期設定を行います。
+## 1-2. プロバイダーを選択
+
+任意のプロバイダーを選択します。
+
+プロバイダー未作成の人は画面上の「作成」ボタンを押下して新規作成してください。
+
+- 任意の「プロバイダー名」を入力して作成
+- LINEという文字列は含められません
+
+![プロバイダー選択](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/ProviderList.png)
+
+
+## 1-3. チャネルを新規作成
+
+チャネルを作成
+
+![チャネル作成](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/NewChannel.png)
+
+「Messaging API」 を選択
+
+![Messaging API](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/SelectMessagingAPI.png)
+
+チャネル情報を入力して、「入力内容を確認する」ボタンを押下する
+
+### チャネル情報の入力例
+
+|  項目名  |  値  |
+| :-- | :-- |
+|  アプリ名  |  LDGQレンタルサービス  |
+|  アプリ説明  |  LDGQレンタルサービス  |
+|  大業種  |  個人  |
+|  小業種  |  個人（その他）  |
+|  メールアドレス  |  （ご自分のメールアドレス）  |
+|  プライバシーポリシーURL  |  （入力不要）  |
+|  サービス利用規約URL  |  （入力不要）  |
+
+
+各種規約に同意してチャネルを作成する
+
+![各種規約に同意](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/AgreeTerms.png)
+
+情報利用に関する事項に同意する
+
+![情報利用に関する事項に同意する](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/AgreeTerms02.png)
+
+これで チャネルの作成が完了し、同時にLINE公式アカウントも自動作成されます。
+
+## 1-4. 応答設定
+
+### LINE Official Manager に行く
+
+チャネル基本設定にあるリンクから、LINE Official Account Manager にいきます
+
+![line_developers_channel_basic_setting](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/line_developers_channel_basic_setting.png)
+
+
+### 応答設定画面を開く
+
+LINE Official Account Manager の`設定`＞`応答設定`へ行く
+
+![応答設定](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/go_to_response_setting.png)
+
+下記のように設定する
+
+![応答設定](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/response_setting.png)
+
+|  項目名  |  値  |
+| :-- | :-- |
+|  応答モード  |  Bot  |
+|  あいさつメッセージ  |  オン  |
+|  応答時間  |  オン  |
+|  Webhook  |  オン  |
+
+
+## 1-5. 作成したアカウントを友だち追加しておく
+
+LINE Official Account Manager の`ホーム`＞`友達追加`にあるQRコードで、自分のスマホLINEアプリに友達追加しておく。
+
+![QRCode](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/line_official_account_manager_add_friend.png)
+
+※QRコードは、LINE Developers の「Messaging API 設定」タブにもあります。
+
