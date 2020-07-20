@@ -73,7 +73,7 @@ LINE Official Account Manager の`設定`＞`応答設定`へ行く
 
 下記のように設定する
 
-![応答設定](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/response_setting.png)
+![応答設定](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-pay-kintone-bot/images/response_setting.png)
 
 |  項目名  |  値  |
 | :-- | :-- |
