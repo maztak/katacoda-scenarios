@@ -2,7 +2,7 @@
 
 ## 2-1. リッチメニューを作成する
 
-![richmenu_demo.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/richmenu_demo.png)
+<img src="https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/richmenu_demo.png" width="180px">
 
 メニューから「リッチメニュー」を選択する
 
@@ -61,7 +61,7 @@
 
 ## 2-2. カードタイプメッセージの作成
 
-![service_list_demo.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/service_list_demo.png)
+<img src="https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/service_list_demo.png" width="180px">
 
 ユーザーにサービス一覧を提示する、カードタイプメッセージを作成します
 
