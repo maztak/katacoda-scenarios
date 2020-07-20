@@ -30,7 +30,7 @@ LINE Developers で「チャネルシークレット」を確認し設定しま�
 
 `LINE Developers` > `チャネル基本設定`
 
-![channel_secret.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-pay-app/img/channel_secret.png)
+![channel_secret.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-pay-kintone-bot/img/channel_secret.png)
 
 ```shell
 heroku config:set LINE_CHANNEL_SECRET="xxx"
@@ -40,7 +40,7 @@ heroku config:set LINE_CHANNEL_SECRET="xxx"
 
 `LINE Developers` > `Messaging API設定`
 
-![channel_access_token.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-pay-app/img/channel_access_token.png)
+![channel_access_token.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-pay-kintone-bot/img/channel_access_token.png)
 
 ```shell
 heroku config:set LINE_CHANNEL_SECRET="xxx"

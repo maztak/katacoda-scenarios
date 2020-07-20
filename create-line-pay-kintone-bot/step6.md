@@ -8,7 +8,7 @@ LINE Developers ＞ `Messaging API設定` ＞ `Webhook設定`の項目にて以�
 https://linepay-kintone-bot-xxx.herokuapp.com/callback
 ```
 
-![webhook_setting.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-pay-app/img/webhook_setting.png)
+![webhook_setting.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-pay-kintone-bt/img/webhook_setting.png)
 
 `検証`を押して「成功」と返ってきたら、`Webhookの利用`をオンにしておきます
 
