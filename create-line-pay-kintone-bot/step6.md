@@ -8,7 +8,7 @@ LINE Developers ＞ `Messaging API設定` ＞ `Webhook設定`の項目にて以�
 https://line-pay-kintone-bot-xxx.herokuapp.com/callback
 ```
 
-![webhook_setting.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-pay-kintone-bt/img/webhook_setting.png)
+![webhook_setting.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-pay-kintone-bot/img/webhook_setting.png)
 
 `検証`を押して「成功」と返ってきたら、`Webhookの利用`をオンにしておきます
 
@@ -20,6 +20,6 @@ https://line-pay-kintone-bot-xxx.herokuapp.com/callback
 
 そうすると300円の決済内容の LINE Pay URL が発行されるはずです。
 
-![line_pay_bot_demo.jpeg](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-pay-kintone-bt/img/line_pay_bot_demo.jpeg)
+![line_pay_bot_demo.jpeg](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-pay-kintone-bot/img/line_pay_bot_demo.jpeg)
 
 最初はHerokuの起動に時間がかかるので1分くらいかかる場合があります（有料プランにすると素早く起動するようになります）。
