@@ -29,7 +29,7 @@
 
 ### メニュー背景画像の作成
 
-`画像を作成`を押して、「サービス選択」メニューをつくります
+`画像を作成`を押して、「サービス一覧」メニューをつくります
 
 ![go_to_create_richmenu_image.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/go_to_create_image.png)
 
@@ -57,6 +57,8 @@
 |  タイプ  |  テキスト  |
 |  テキスト  |  サービス一覧  |
 
+このアクションに設定したテキスト`サービス一覧`の文言は、後に自動応答を設定する際のキーワードになるので間違えないようにしてください。
+
 `保存`を押して、作成を完了します。
 
 ## 2-2. カードタイプメッセージの作成
@@ -78,6 +80,8 @@
 画像は`デフォルト写真`を使ってもいいですが、今回は[こちら](https://github.com/maztak/katacoda-scenarios/raw/master/create-line-official-account/irasutoya_counselor.png)のいらすとやさんの画像をお借りしてます。
 
 ![card_type_messaga_1.png](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-official-account/images/card_type_messaga_1.png)
+
+アクション1に設定する`サービス1を依頼する`の文言は、これをキーワードにして別の自動応答を行うので間違えないようにしてください。
 
 ちなみに`カードを追加`を押すことでサービス（商品）を増やしていくことができます。
 
