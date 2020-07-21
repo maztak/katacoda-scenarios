@@ -1,15 +1,15 @@
 まず LINE Pay アプリを実装しましょう。
 
-①Githubから[line-pay-v3-starter](https://github.com/maztak/line-pay-v3-starter) リポジトリをCloneします<br>
+①Githubから[line-pay-v3-python-sdk-sample](https://github.com/maztak/line-pay-v3-python-sdk-sample) リポジトリをCloneします<br>
 
 ```shell
-git clone https://github.com/maztak/line-pay-v3-starter.git
+git clone https://github.com/maztak/line-pay-v3-python-sdk-sample.git
 ```{{copy}}
 
-②カレントディレクトリを`line-pay-v3-starter`に変更します<br>
+②カレントディレクトリを`line-pay-v3-python-sdk-sample`に変更します<br>
 
 ```shell
-cd line-pay-v3-starter
+cd line-pay-v3-python-sdk-sample
 ```{{copy}}
 
 ③`pip`コマンドで`requirements.txt`に記載のライブラリをインストールします<br>
@@ -20,7 +20,7 @@ pip install -r requirements.txt
 ④kintone連携のための設定
 今回はkintoneの売上管理アプリを連携させるので、`account.yml`を編集していきます。
 
-Editorで`line-pay-v3-starter`ディレクトリをクリックして展開し、`account.yml`を開きます。
+Editorで`line-pay-v3-python-sdk-sample`ディレクトリをクリックして展開し、`account.yml`を開きます。
 
 前のシナリオでkintoneに追加したlinepay連携アプリの情報をもとに値を変更します。
 ![kintone_api_token](https://raw.githubusercontent.com/maztak/katacoda-scenarios/master/create-line-pay-app/img/kintone_api_token.png)

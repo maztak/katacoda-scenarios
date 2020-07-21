@@ -1,6 +1,6 @@
 kintoneに LINE Pay と連携する売上管理アプリを追加します。
 
-[ここ](https://github.com/maztak/line-pay-v3-starter/archive/master.zip)から line-pay-v3-starter リポジトリをダウンロードし、解凍します。
+[ここ](https://github.com/maztak/line-pay-v3-python-sdk-sample/archive/master.zip)から line-pay-v3-python-sdk-sample リポジトリをダウンロードし、解凍します。
 
 ①kintone開発者環境（`https://xxx.cybozu.com`）にアクセスし、`+`ボタンを押します。
 
