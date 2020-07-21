@@ -1,6 +1,6 @@
 {
-  "title": "Create Line Pay App",
-  "description": "LINE PAY API v3 SDK × Heroku で一般決済を実装",
+  "title": "Create Line Pay App with kintone",
+  "description": "LINE PAY API v3 SDK × Heroku × kintone で一般決済を実装",
   "difficulty": "Beginner",
   "time": "60 minutes",
   "details": {
@@ -10,15 +10,15 @@
         "text": "step1.md"
       },
       {
-        "title": "heroku側の設定（アプリの作成と紐付け）",
+        "title": "Heroku側の設定（アプリの作成と紐付け）",
         "text": "step2.md"
       },
       {
-        "title": "heroku側の設定（LINE加盟店情報を設定）",
+        "title": "Heroku側の設定（LINE加盟店情報を設定）",
         "text": "step3.md"
       },
       {
-        "title": "herokuにアプリをデプロイする",
+        "title": "Herokuにアプリをデプロイする",
         "text": "step4.md"
       }
     ],
